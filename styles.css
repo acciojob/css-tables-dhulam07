@@ -4,31 +4,29 @@ body {
     padding: 20px;
 }
 
-h1 {
-    margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 20px;
-}
-
-/* TABLE STYLING */
 table {
-    border-spacing: 15px; /* creates gap between cells */
+    border-spacing: 15px;
 }
 
-/* COMMON CELL STYLE */
 th, td {
     background-color: #f0f0f0;
-    border: 2px solid #cfcfcf;
-    border-radius: 12px;
-    padding: 20px 40px;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    padding: 8px;
     text-align: left;
-    font-size: 24px;
 }
 
-/* HEADER STYLE */
+/* ✅ FIXED alternating colors (skip header) */
+tr:nth-child(even) td {
+    background-color: #e6e6e6;
+}
+
+tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+
+/* header */
 th {
     font-weight: bold;
-    font-size: 28px;
+    background-color: #f0f0f0;
 }
