@@ -16,17 +16,15 @@ th, td {
     text-align: left;
 }
 
-/* ✅ FIXED alternating colors (skip header) */
-tr:nth-child(even) td {
+/* ✅ ONLY tbody rows */
+tbody tr:nth-child(even) td {
     background-color: #e6e6e6;
 }
 
-tr:nth-child(odd) td {
+tbody tr:nth-child(odd) td {
     background-color: #ffffff;
 }
 
-/* header */
 th {
     font-weight: bold;
-    background-color: #f0f0f0;
 }
